@@ -1,3 +1,14 @@
-\ The master branch has no content
+# python27-pymc3
 
-Look at the c7 branch if you are working with CentOS-7, or the c4/c5/c6 branch for CentOS-4, 5 or 6 If you find this file in a distro specific branch, it means that no content has been checked in yet
+This builds the pymc3 package for python27 scl.  Rebuilding is not straight forward.  Set these
+parameters in the build job:
+
+> RPM = pymc3
+>
+> DEFINES = build_number $BUILD_NUMBER,dist .alti6,scl_prefix python27-,scl python27
+>
+> ROOT = centos6.7-python27-x86_64
+>
+> REPO_NAME = rpms-python27-pymc3
+
+All other parameters can use defaults.
