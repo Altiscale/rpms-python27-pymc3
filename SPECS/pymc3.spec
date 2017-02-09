@@ -32,5 +32,5 @@ Learning with Theano
 %{?scl:EOF}
 
 %files
-%doc LICENSE README docs/source/index.rst
+%doc LICENSE README.rst docs/source/index.rst
 %{python_sitelib}/*
