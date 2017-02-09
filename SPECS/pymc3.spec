@@ -19,7 +19,7 @@ Probabilistic Programming in Python: Bayesian Modeling and Probabilistic Machine
 Learning with Theano
 
 %prep
-%setup -q -n -%{version}
+%setup -q -n pymc3-%{version}
 
 %build
 %{?scl:scl enable %{scl} - << \EOF}
